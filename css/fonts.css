@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Righteous';
+    src: url(/fonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+html {
+    font-family: 'Roboto', system-ui, sans-serif;
+    color: black;
+    font-size: 42px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Righteous', system-ui, sans-serif;
+}

@@ -1,0 +1,45 @@
+:root {
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --whitespace: 1rem;
+}
+
+
+article {
+    
+    border: solid rgb(96 139 168);
+    padding: 2rem;
+}
+
+#teamList {
+    display: grid;
+    gap: 20px; /* espace entre les cellules */
+    align-items: start;
+    justify-content: space-between;
+
+    /* 1. Android : 2 colonnes */
+    @media (min-width:360px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 2. iPhone : 3 colonnes */
+    @media (min-width: 375px) {
+    #teamList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    }
+
+    /* 3. Desktop : 4 colonnes */
+    @media (min-width: 1080px) {
+    #teamList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+

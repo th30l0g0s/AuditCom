@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="src/main.js" type="module" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="templates/teamItem.html">Team Item</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
+            <h1>Nombres d'équipes de football répertoriés dans notre rapport: </h1>
+            <h1 data-bind-global="count"></h1>
+            
+            <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
+            <section id="teamList">
+            </section>
+
+            <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
+            <div id="messageContainer"></div>
+
+            <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
+            <form id="downloadForm">
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Courriel</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletterAgreement" required>
+                    <label for="newsletter">J'accepte de recevoir la newsletter pour télécharger le rapport.</label>
+                </div>
+                <button type="submit">Télécharger le PDF</button>
+                <div id="formMessage"></div>
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        Copyright © | Nehdi-Ernst sàrl | 2025 - 2026
+    </footer>
+    
+</body>
+</html>

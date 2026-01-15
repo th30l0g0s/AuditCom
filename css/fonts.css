@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Righteous';
-    src: url("../fonts/Righteous-Regular.ttf");
+    src: url("fonts/Righteous-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url("../fonts/Roboto-VariableFont.ttf");
+    src: url("fonts/Roboto-VariableFont.ttf");
 }
 
 html {

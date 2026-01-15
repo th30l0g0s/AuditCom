@@ -29,29 +29,29 @@
 
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Des clubs historiques comme Yverdon, Xamax, Sion ou Biel-Bienne, jusqu’aux équipes plus locales, construisent désormais leur lien avec les fans aussi bien sur le terrain que via sites web, réseaux sociaux, applis et boutiques en ligne. Téléchargez le rapport pour découvrir comment 30 clubs de Suisse romande utilisent (ou n’exploitent pas encore) tout le potentiel du numérique pour engager leurs supporters, valoriser leurs juniors et séduire sponsors et partenaires.</p>
+            <p>Des clubs historiques comme Yverdon, Xamax, Sion ou Biel-Bienne, jusqu’aux équipes plus locales, construisent désormais leur lien avec les fans aussi bien sur le terrain que via sites web, réseaux sociaux, applis et boutiques en ligne. Téléchargez le rapport pour découvrir comment <span data-bind-global="count"></span> clubs de Suisse romande utilisent (ou n’exploitent pas encore) tout le potentiel du numérique pour engager leurs supporters, valoriser leurs juniors et séduire sponsors et partenaires.</p>
         </section>
 
         <section id="vignettes">
-            <p>Des clubs fondés en 1896, 1897 ou 1909 pilotent aujourd’hui des écosystèmes avec site, app, e-shop, billetterie en ligne et réseaux sociaux.</p>
-            <img src="images/fc_sion.jpg" alt="">
+            <p>82% des supporters suivent désormais leur équipe via les réseaux sociaux, ce qui fait d’Instagram et Facebook non plus des options, mais le levier central de la relation entre les clubs et leurs fans.​</p>
+            <img src="images/icons/icon_supporter.png" alt="">
             <p>Certains clubs proposent déjà une app mobile + billetterie + boutique + contenus vidéo, alors que d’autres vendent encore leurs billets via formulaire et virement bancaire.</p>
-            <img src="images/etoile_carouge.jpg" alt="">
+            <img src="images/icons/icon_evo_tech.png" alt="">
             <p>Au‑delà du foot masculin, les écosystèmes digitaux valorisent aussi équipes féminines, juniors, futsal, beach soccer et académies, tous connectés via sites et réseaux sociaux dédiés.</p>
-            <img src="images/fc-stade-lausanne-ouchy.jpg" alt="">
+            <img src="images/icons/icon_femme_foot.png" alt="">
             <p>Des clubs fondés en 1896, 1897 ou 1909 pilotent aujourd’hui des écosystèmes avec site, app, e‑shop, billetterie en ligne et réseaux sociaux.</p>
-            <img src="images/fc_xamx.jpg" alt="">
+            <img src="images/icons/icon_ecosystem_digital.png" alt="">
         </section>
 
         <section id="clubs">
-            <h1>Les 30 équipes romandes</h1>
+            <h1>Les <span data-bind-global="count"></span> équipes romandes</h1>
             <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
             <section id="teamList">
             </section>
         </section>
 
         <section id="banderole">
-            <h2>Téléchargez ce rapport et découvrez comment 30 clubs romands transforment le digital en véritable 12e homme, sur le terrain comme en dehors.</h2>
+            <h2>Téléchargez ce rapport et découvrez comment <span data-bind-global="count"></span> clubs romands transforment le digital en véritable 12e homme, sur le terrain comme en dehors.</h2>
         </section>
 
                         
@@ -59,40 +59,33 @@
             <h2>Formulaire de téléchargement</h2>
             <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
             <form id="downloadForm">
-                <div class="form-group">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="firstName" required>
-                </div>
+                <section id="form_text">
+                    <div class="form-group">
+                        <input type="text" id="prenom" name="firstName" placeholder="Prénom" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="lastName" required>
-                </div>
+                    <div class="form-group">
+                        <input type="text" id="nom" name="lastName" placeholder="Nom" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Courriel</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="checkbox" id="newsletter" name="newsletterAgreement" required>
-                    <label for="newsletter">J'accepte de recevoir la newsletter pour télécharger le rapport.</label>
-                </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </section>
+                <section id="form_coche">
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletterAgreement" required>
+                        <label for="newsletter">J'accepte de recevoir la newsletter pour télécharger le rapport.</label>
+                    </div>
+                </section>
+                <section id="form_processus">
+                    <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
+                    <div id="messageContainer"></div>
+                    <button type="submit" class="bouton-lien">Télécharger le PDF</button>
+                </section>
                 
-                <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
-                <div id="messageContainer"></div>
-                    
-                <button type="submit">Télécharger le PDF</button>
             </form>
         </section>
     </main>
-    <footer>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        Copyright © | Nehdi-Ernst sàrl | 2025 - 2026
-    </footer>
-    
 </body>
 </html>

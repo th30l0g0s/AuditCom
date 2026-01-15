@@ -2,10 +2,24 @@
   <!-- 
     data-bind="message" : Affiche le message de succès ou d'erreur
     data-bind-attr-class="messageClass" : Ajoute une classe CSS pour le style (ex: "success" ou "error")
+<<<<<<< HEAD
   -->
   <div data-bind-attr-class="messageClass" class="message">
     <p data-bind="message"></p>
   </div>
+=======
+    data-bind="progressPercent" : Affiche le pourcentage de progression (optionnel, pour les messages de type "loading")
+  -->
+    
+  <aside data-bind-attr-class="messageClass" class="message">
+    <p data-bind="message"></p>
+    <div class="progress-container" data-bind-attr-style="progressContainerStyle">
+      <progress data-bind-attr-value="progressValue" data-bind-attr-max="progressMax" class="progress-bar"></progress>
+      <span class="progress-text" data-bind="progressPercent"></span>
+    </div>
+  </aside>
+
+>>>>>>> upstream/main
 </template>
 
 

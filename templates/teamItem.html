@@ -1,12 +1,12 @@
 <template>
   <article>
+    <!-- data-bind-attr-src="logoUrl" : Affiche le logo de l'équipe -->
+    <img data-bind-attr-src="logoUrl" alt="Logo">
     <!-- data-bind="teamName" : Affiche le nom de l'équipe -->
     <h2 data-bind="teamName"></h2>
-   
-    <!-- data-bind="title" : Affiche le titre du document PDF -->
-    <p data-bind="title"></p>
-    
-    <!-- data-bind="uploadedAt" : Affiche la date de téléversement formatée -->
+    <!-- data-bind="uploadedAt" : Affiche la date de téléversement -->
     <p data-bind="uploadedAt"></p>
+    <!-- data-bind="author" : Affiche l'auteur -->
+    <p data-bind="author"></p>
   </article>
 </template>

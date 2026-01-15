@@ -1,14 +1,30 @@
-@font-face {
+/* @font-face {
     font-family: 'Righteous';
     src: url("../fonts/Righteous/Righteous-Regular.ttf");
     font-display: swap;
+} */
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
+
+.roboto-uniquifer {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
     font-display: swap;
-}
+} */
 
 html {
     font-family: 'Roboto', system-ui, sans-serif;

@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Righteous';
-    src: url("./fonts/Righteous/Righteous-Regular.ttf");
+    src: url("../fonts/Righteous/Righteous-Regular.ttf");
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+    src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@ html {
 
 h1 {
     font-size: 2rem;
-    line-height: 8rem;
+    line-height: 1.1;
 }
 
 h2 {

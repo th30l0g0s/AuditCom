@@ -1,16 +1,5 @@
-/* header > nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 1rem 1rem 1rem;
-    color: var(--color-primary);
-}
- header > nav > a {
-    text-decoration: none;
-    font-family: sans-serif;
-    color: var(--color-primary);
- } */
 html {
-scroll-behavior: smooth; /* Optionnel : Pour un défilement agréable */
+scroll-behavior: smooth;
 }
 
 section {
@@ -20,6 +9,9 @@ section {
  main {
     padding-top: 2rem;
  }
+
+/* ---------------------------------------------------------- */
+ /* Section download_report */
 #h1_download_report {
     color: #7F0F00;
     text-align: left;
@@ -38,7 +30,6 @@ section {
     z-index: 1;
 }
 
-/* Style pour faire ressembler le lien à un bouton */
 .bouton-lien {
 display: inline-block;
 padding: 10px 20px;
@@ -52,12 +43,12 @@ margin-bottom: 2rem;
 border: none;
 }
 
-/* Effet au survol */
 .bouton-lien:hover {
 background-color: var(--color-primary);
 }
 
-
+/* ---------------------------------------------------------- */
+/* section introduction */
 #introduction {
 background-color: var(--color-secondary);
 color: white;
@@ -67,6 +58,8 @@ margin-top: -12rem;
 padding: 4rem 2rem;
 }
 
+/* ---------------------------------------------------------- */
+/* section vignettes */
 #vignettes {
     display: grid;
     gap: 1rem; /* espace entre les cellules */
@@ -78,7 +71,6 @@ padding: 4rem 2rem;
 
 #vignettes > p {
         opacity: 50%;
-
 }
 
 #vignettes > img {
@@ -87,7 +79,7 @@ padding: 4rem 2rem;
     object-fit: contain;
     display: block;
 }
-#vignettes > :nth-child(4n + 1) {
+/* #vignettes > :nth-child(4n + 1) {
     grid-column: 1;
 }
 
@@ -101,8 +93,10 @@ padding: 4rem 2rem;
 
 #vignettes > img:nth-child(4n + 4) {
     grid-column: 1;
-}
+} */
 
+/* ---------------------------------------------------------- */
+/* section teamList */
 #teamList {
     display: grid;
     gap: 1rem; /* espace entre les cellules */
@@ -132,7 +126,8 @@ padding: 4rem 2rem;
         grid-template-columns: repeat(4, 1fr);
         }
 }
-
+/* ---------------------------------------------------------- */
+/* section formulaire */
 #banderole {
     color: var(--color-secondary);
     text-align: left;

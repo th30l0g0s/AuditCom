@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Righteous';
-    src: url(/fonts/Righteous/Righteous-Regular.ttf);
+    src: url("./fonts/Righteous/Righteous-Regular.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url(/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+    src: url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+    font-display: swap;
 }
 
 html {
@@ -27,7 +29,7 @@ h1, h2 {
     font-family: 'Righteous', system-ui, sans-serif;
 }
 
-@media screen and (width >=1080px) {
+@media screen and (min-width: 1080px) {
     html {
         font-size: 20px;
     }

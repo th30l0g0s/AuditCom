@@ -1,49 +1,142 @@
-
-header > nav {
+/* header > nav {
     display: flex;
     justify-content: space-between;
+    padding: 0.5rem 1rem 1rem 1rem;
+    color: var(--color-primary);
+}
+ header > nav > a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: var(--color-primary);
+ } */
+html {
+scroll-behavior: smooth; /* Optionnel : Pour un défilement agréable */
 }
 
-#h1_premiere {
-    color: var(--color-secondary);
-}
-article {
-    
-    border: solid rgb(96 139 168);
+section {
+    padding: 1rem 1rem;
 }
 
-#a_premiere {
-    background-color: var(--color-secondary);
-    color: white;
+ main {
+    padding-top: 2rem;
+ }
+#h1_download_report {
+    color: #7F0F00;
+    text-align: left;
 }
+
+#img_download_report {
+    border: 10px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#download_report {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style pour faire ressembler le lien à un bouton */
+.bouton-lien {
+display: inline-block;
+padding: 10px 20px;
+background-color: var(--color-secondary);
+color: white;
+text-decoration: none; /* Enlève le soulignement */
+border-radius: 5px; /* Coins arrondis */
+font-family: sans-serif;
+transition: background-color 0.3s;
+margin-bottom: 2rem;
+}
+
+/* Effet au survol */
+.bouton-lien:hover {
+background-color: var(--color-primary);
+}
+
+
+#introduction {
+background-color: var(--color-secondary);
+color: white;
+position: relative;
+z-index: 2;
+margin-top: -12rem;
+padding: 4rem 2rem;
+}
+
+#vignettes {
+    display: grid;
+    gap: 1rem; /* espace entre les cellules */
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem;
+}
+
+#vignettes > img {
+    border-radius: 12px;
+}
+
+/* @media (min-width: 1080px) {
+    #vignettes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #vignettes > :nth-child(4n + 1) {
+        grid-column: 1;
+    }
+
+    #vignettes > :nth-child(4n + 2) {
+        grid-column: 2;
+    }
+
+    #vignettes > :nth-child(4n + 3) {
+        grid-column: 2;
+    }
+
+    #vignettes > :nth-child(4n + 4) {
+        grid-column: 1;
+    }
+} */
 
 #teamList {
     display: grid;
     gap: 1rem; /* espace entre les cellules */
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
 }
 
-
-/* 1. Android : 2 colonnes */
-@media (min-width: 375px) {
-    #teamList {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.team-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 10px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* 2. iPhone : 3 colonnes */
-@media (min-width: 800px) {
-    #teamList {
-        grid-template-columns: repeat(3, 1fr);
-        }
+.team-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; /* conserve le logo entier */
+  display: block;
 }
 
-/* 3. Desktop : 4 colonnes */
 @media (min-width: 1080px) {
     #teamList {
         grid-template-columns: repeat(4, 1fr);
         }
+}
+
+#banderole {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    padding: 4rem;
 }
 
 footer {

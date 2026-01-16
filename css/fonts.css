@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Righteous';
-    src: url("fonts/Righteous-Regular.ttf");
+    src: url("../fonts/Righteous-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url("fonts/Roboto-VariableFont.ttf");
+    src: url("../fonts/Roboto-VariableFont.ttf");
 }
 
 html {
@@ -15,28 +15,28 @@ html {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 6rem;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
-h1, h2 {
+h1, h2, #bouton1, #bouton2 {
     font-family: 'Righteous', system-ui, sans-serif;
 }
 
-@media screen and (min-width: 1080px) {
+/* @media (max-width: 370px) {
     html {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 1.4rem;
     }
-}
+} */

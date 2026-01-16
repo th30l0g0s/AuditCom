@@ -19,15 +19,19 @@ section {
 
 #img_download_report {
     border: 10px solid #FFFFFF;
-    border-radius: 12px;
+    border-radius: 32px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 #download_report {
     text-align: left;
-    padding: 20px;
+    padding: 0 3rem ;
     position: relative;
     z-index: 1;
+}
+
+#download_report > div {
+    margin: 8rem 0;
 }
 
 .bouton-lien {
@@ -39,7 +43,7 @@ text-decoration: none; /* Enlève le soulignement */
 border-radius: 5px; /* Coins arrondis */
 font-family: sans-serif;
 transition: background-color 0.3s;
-margin-bottom: 2rem;
+margin-top: 5rem;
 border: none;
 }
 
@@ -66,7 +70,7 @@ padding: 4rem 2rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    padding: 5rem;
+    padding: 0 3rem;
 }
 
 #vignettes > p {
@@ -74,29 +78,17 @@ padding: 4rem 2rem;
 }
 
 #vignettes > img {
-    width: 180px;
-    height: 180px;
+    width: 25vw;
+    height: 25vw;
     object-fit: contain;
     display: block;
 }
-/* #vignettes > :nth-child(4n + 1) {
-    grid-column: 1;
-}
-
-#vignettes > img:nth-child(4n + 2) {
-    grid-column: 2;
-}
-
-#vignettes > :nth-child(4n + 3) {
-    grid-column: 2;
-}
-
-#vignettes > img:nth-child(4n + 4) {
-    grid-column: 1;
-} */
 
 /* ---------------------------------------------------------- */
 /* section teamList */
+#clubs {
+    padding: 0 3rem;
+}
 #teamList {
     display: grid;
     gap: 1rem; /* espace entre les cellules */
@@ -127,12 +119,22 @@ padding: 4rem 2rem;
         }
 }
 /* ---------------------------------------------------------- */
-/* section formulaire */
+/* section banderole */
 #banderole {
+    padding: 3rem;
+}
+
+#banderole > p {
+    border-left: 5px solid var(--color-secondary);
     color: var(--color-secondary);
     text-align: left;
-    border-left: 5px solid var(--color-secondary);
-    margin-left: 1.5rem;
+    padding-left: 1rem;
+}
+
+/* ---------------------------------------------------------- */
+/* section formulaire */
+#formulaire {
+    padding: 0 3rem;
 }
 #formulaire > h2 {
     padding: 2rem 0;

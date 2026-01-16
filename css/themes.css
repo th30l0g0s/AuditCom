@@ -1,5 +1,12 @@
 :root {
-    --color-primary: #000000;
-    --color-secondary: #14c500;
-    --whitespace: 1rem;
+  --color-primary: #000000;
+  --color-secondary: #14c500;
+  --whitespace: 1rem;
+  --fs-sm: clamp(0.8rem, 0.73vi + 0.63rem, 1.13rem);
+  --fs-base: clamp(1rem, 1.13vi + 0.74rem, 1.5rem);
+  --fs-md: clamp(1.25rem, 1.69vi + 0.86rem, 2rem);
+  --fs-lg: clamp(1.56rem, 2.49vi + 0.99rem, 2.67rem);
+  --fs-xl: clamp(1.95rem, 3.61vi + 1.12rem, 3.55rem);
+  --fs-xxl: clamp(2.44rem, 5.17vi + 1.25rem, 4.74rem);
+  --fs-xxxl: clamp(3.05rem, 7.35vi + 1.35rem, 6.31rem);
 }

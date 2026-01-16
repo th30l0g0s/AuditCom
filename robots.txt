@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://th30l0g0s.github.io/AuditCom/sitemap.xml

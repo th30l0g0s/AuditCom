@@ -43,8 +43,11 @@ text-decoration: none; /* Enlève le soulignement */
 border-radius: 5px; /* Coins arrondis */
 font-family: sans-serif;
 transition: background-color 0.3s;
-margin-top: 5rem;
 border: none;
+}
+
+#bouton1 {
+    margin-top: 5rem;
 }
 
 .bouton-lien:hover {
@@ -71,6 +74,7 @@ padding: 4rem 2rem;
     align-items: center;
     justify-items: center;
     padding: 0 3rem;
+    margin: 2rem 0;
 }
 
 #vignettes > p {
@@ -85,10 +89,16 @@ padding: 4rem 2rem;
 }
 
 /* ---------------------------------------------------------- */
-/* section teamList */
+/* section clubs */
 #clubs {
     padding: 0 3rem;
+    margin: 4rem 0;
 }
+
+#clubs > h2 {
+    margin: 2rem 0;
+}
+
 #teamList {
     display: grid;
     gap: 1rem; /* espace entre les cellules */
@@ -171,4 +181,8 @@ padding: 4rem 2rem;
 .form-group > input {
     border: none;
     outline: none;
+}
+
+#bouton2 {
+    margin-bottom: 4rem;
 }

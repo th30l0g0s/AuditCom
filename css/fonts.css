@@ -12,15 +12,17 @@ html {
     font-family: 'Roboto', system-ui, sans-serif;
     color: black;
     font-size: 16px;
+    @media screen and (width > 1080px) {
+        font-size: 24px;
+    }    
 }
 
 h1 {
-    font-size: 6rem;
-    line-height: 1.1;
+    font-size: var(--fs-xxl);
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: var(--fs-xl);
 }
 
 h1, h2, #bouton1, #bouton2 {
@@ -29,14 +31,15 @@ h1, h2, #bouton1, #bouton2 {
 
 /* @media (max-width: 370px) {
     html {
-        font-size: 15px;
+        font-size: var(--fs-base);
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: var(--fs-xl);
     }
 
     h2 {
         font-size: 1.4rem;
     }
 } */
+
